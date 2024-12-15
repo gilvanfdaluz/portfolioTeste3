@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tenor+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Tenor Sans", sans-serif;
+    background-color: #f5e4d7;
+    margin-top: 100px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*HADER*/
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #3a2812;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 70%;
+    border: 2px solid #f7d9a4;
+}
+header .social-midia {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+header .social-midia a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    border-bottom: 5px solid #3a2812;
+}
+header .social-midia a:hover {
+    border-bottom: 5px solid #deb371;
+}
+header .social-midia img {
+    max-width: 50px;   
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navigation {
+    display: flex;
+    flex: 1;
+}
+ header .container ul  {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+}
+header .navigation a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #f7d9a4;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border-bottom: 5px solid #3a2812;
+}
+header .navigation a:hover,
+header .navigation .active a{
+    border-bottom: 5px solid #deb371;
+    color: #deb371;
+}
+
+header .suspended div{
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color:#f7d9a4;
+    margin: 6px;
+
+}
+
+/*MAINS PROFILE*/
+main .profile,
+main .container {
+    height: calc(100vh - 100px);
+    scroll-margin-top: 100px;
+}
+main .profile {
+    background-image:url(../images/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+main .profile .container,
+main .profile .flex,
+main .profile .title,
+main .profile .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .profile .container {
+    gap: 10px;
+}
+main .profile .flex {
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+}
+main .profile .title {
+    font-size: 100px;
+    font-weight: 500;
+    color: #af8016;
+    margin-bottom: 20px;
+}
+main .profile .description {
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #f7d9a4;
+    color: #523e27;
+    margin-bottom: 20px;
+}
+main .profile .description-title{
+    padding-bottom: 40px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+main .profile .description-title h4{
+    border-bottom: 3px solid #523e27;
+}
+main .description p{
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+main .profile .training-img {
+    align-items: flex-end;
+}
+main .profile .training-img img {
+    width: 400px;
+    height: 400px;
+    background-color: #f7d9a4;
+    border-radius: 75%;
+    border: 5px solid #af8016;
+}
+main .profile .training img {
+    width: 200px;
+}
+
+
+
+@media (max-width: 1075px){
+    main .profile .title {
+        font-size: 100px;
+    }
+    main .profile .description {
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin-bottom:10px;
+    }
+    main .profile .description-title{
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+    main .profile .training-img img {
+        width: 370px;
+        height: 370px;
+    }
+}
+
+@media (max-width: 768px){
+    header .navigation.open {
+        display: flex; /* Exibir o menu */
+        flex-direction: column; /* Organizar os itens verticalmente */
+    }    
+    header .suspended div{
+        display: flex;
+    }
+    header,
+    header .container {
+        height: 70px;
+    }
+    body {
+        margin-top: 70px;
+    }
+    main .profile,
+    main .container {
+        height: calc(100vh - 70px);
+        scroll-margin-top: 70px;
+    } 
+    header .navigation{
+        display: none;  
+        background-color:#3a2812;
+        border-top: 2px solid #f7d9a4;
+        position: absolute;
+        justify-content: flex-start;
+        top: 70px;
+        box-sizing: border-box;
+        width: 100%;
+        left: 0;
+    }
+    header .navigation .active a{
+        border-bottom: 5px solid #3a2812;
+        color:#f7d9a4;
+    }
+    header .navigation .active a:hover{
+        border-bottom: 5px solid #deb371;
+        color: #deb371;
+    }
+    header .navigation ul{
+        display: flex;
+        flex-direction: column;
+    }
+    header .navigation li{
+        padding: 30px;
+    }
+    header .navigation a{
+        height: 30px;
+    }
+    .social-midia {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        left: 0;
+        align-items: center;
+        justify-content:space-around;
+        background-color: #3a2812;
+    }
+    .social-midia img {
+        width: 30px;
+    }
+    header .social-midia a{
+        border-bottom: none;
+    }
+    header .social-midia a:hover {
+        border-bottom: none;
+    }
+    main .profile{
+        display: flex;
+        align-items: center;
+    }
+    main .profile .training img{
+        width: 130px;
+    }
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    main .profile .container {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    main .profile .training-img img {
+        max-width : 200px;
+        max-height: 200px;
+    }
+    main .profile .title {
+        font-size: 60px;
+    }
+    main .profile .description-title{
+        padding-bottom: 10px;
+        font-size: 30px;    
+    }
+}
+
+@media (max-width: 425px){
+    main .profile .training-img img {
+        max-width : 150px;
+        max-height: 150px;  
+    }
+    main .profile .title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 375px){
+    main .profile .training-img img {
+        max-width : 140px;
+        max-height: 140px;
+    }
+    main .profile .title {
+        font-size: 50px;
+    }
+    main .profile .description-title{
+        font-size: 25px;
+    }
+    main .description p{
+        font-size: 16px;
+        line-height: 20px
+    }
+}
