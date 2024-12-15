@@ -271,15 +271,22 @@ main .profile .training img {
         height: auto;
     }
     main .profile .training-img img {
-        max-width : 200px;
-        max-height: 200px;
+        max-width : 150px;
+        max-height: 150px;
     }
     main .profile .title {
-        font-size: 60px;
+        font-size: 50px;
     }
     main .profile .description-title{
         padding-bottom: 10px;
         font-size: 30px;    
+    }
+    main .profile .description-title{
+        font-size: 25px;
+    }
+    main .description p{
+        font-size: 16px;
+        line-height: 20px
     }
 }
 
