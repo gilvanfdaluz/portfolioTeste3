@@ -173,7 +173,7 @@ main .container .certification {
 }
 main .container .certification {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
 }
 main .diploma{
@@ -181,7 +181,7 @@ main .diploma{
     width: 100%;
     max-height: 450px;
     height: 100%;
-    transition: all 0.5s ease-in; 
+    transition: all 0.3s ease-in; 
 }
 main .diploma:hover {
     max-width: 950px;
@@ -210,11 +210,6 @@ main .course-information p {
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
-}
-
-.certification {
-    background-color: #af8016;
-    height: auto;
 }
 
 /*Midia*/
