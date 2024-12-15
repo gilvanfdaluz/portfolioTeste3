@@ -186,13 +186,14 @@ main .profile .training img {
     }
 }
 
+
 @media (max-width: 768px){
     header .navigation.open {
-        display: flex; /* Exibir o menu */
-        flex-direction: column; /* Organizar os itens verticalmente */
+        display: flex;
+        flex-direction: column;
     }    
     header .suspended div{
-        display: flex;
+        display:flex;
     }
     header,
     header .container {
@@ -211,19 +212,20 @@ main .profile .training img {
         background-color:#3a2812;
         border-top: 2px solid #f7d9a4;
         position: absolute;
-        justify-content: flex-start;
+        left: 0;
         top: 70px;
         box-sizing: border-box;
-        width: 100%;
-        left: 0;
+        width: 100%;  
     }
+    header .navigation a,
     header .navigation .active a{
-        border-bottom: 5px solid #3a2812;
+        border-bottom: none;
         color:#f7d9a4;
     }
+    header .navigation a:hover, 
     header .navigation .active a:hover{
-        border-bottom: 5px solid #deb371;
-        color: #deb371;
+        border-bottom: none;
+        color: #f7d9a4;
     }
     header .navigation ul{
         display: flex;
@@ -256,10 +258,11 @@ main .profile .training img {
     }
     main .profile{
         display: flex;
-        align-items: center;
+        align-items:center;
     }
     main .profile .training img{
         width: 130px;
+        margin-bottom: 60px;
     }
     header .logo img {
         width: 50px;
@@ -275,7 +278,7 @@ main .profile .training img {
         max-height: 150px;
     }
     main .profile .title {
-        font-size: 50px;
+        font-size: 40px;
     }
     main .profile .description-title{
         padding-bottom: 10px;
@@ -285,34 +288,40 @@ main .profile .training img {
         font-size: 25px;
     }
     main .description p{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px
     }
 }
 
-@media (max-width: 425px){
-    main .profile .training-img img {
-        max-width : 150px;
-        max-height: 150px;  
-    }
+@media (max-width: 425px) {
     main .profile .title {
-        font-size: 50px;
+        font-size: 35px;
+        margin-bottom: 10px;
     }
-}
 
-@media (max-width: 375px){
     main .profile .training-img img {
-        max-width : 140px;
-        max-height: 140px;
-    }
-    main .profile .title {
-        font-size: 50px;
+        max-width : 130px;
+        max-height: 130px;
     }
     main .profile .description-title{
-        font-size: 25px;
+        padding-bottom: 10px;
+        font-size: 25px;    
     }
-    main .description p{
-        font-size: 16px;
-        line-height: 20px
+
+    main .profile .training img{
+        width: 100px;
+    }
+   
+}
+
+@media (max-width: 310px){
+    main .profile {
+        height: auto;
+    }
+    main .profile .training img{
+        margin-bottom: 30px;
+    }
+    main .profile .training-img img {
+        margin-top: 10px;
     }
 }
