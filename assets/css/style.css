@@ -92,7 +92,7 @@ header .suspended div{
     margin: 6px;
 }
 
-/*MAINS PROFILE*/
+/*MAIN PROFILE*/
 main .profile,
 main .container {
     height: calc(100vh - 100px);
@@ -164,7 +164,60 @@ main .profile .training img {
     width: 180px;
 }
 
+/*CERTIFICATION*/
+main .training,
+main .container .certification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container .certification {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+main .diploma{
+    max-width: 750px;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    transition: all 0.5s ease-in; 
+}
+main .diploma:hover {
+    max-width: 950px;
+    max-height: 750px;
+    position: absolute;
+    align-items: center;
+   height: auto;
+}
+main .diploma img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #3a2812;
+    border-radius: 5px;
+    box-shadow:  0px 15px 30px #888888;
+}
+main .course-information {
+    padding: 10px;
+    color: #3a2812;
+}
+main .course-information h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+main .course-information p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
 
+.certification {
+    background-color: #af8016;
+    height: auto;
+}
+
+/*Midia*/
 @media (max-width: 1075px){
     main .profile .title {
         font-size: 80px;
