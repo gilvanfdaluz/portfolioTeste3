@@ -8,7 +8,7 @@
 }
 body {
     font-family: "Tenor Sans", sans-serif;
-    background-color: #f5e4d7;
+    background-color: #f7d9a4;
     margin-top: 100px;
 }
 .container {
@@ -165,51 +165,63 @@ main .profile .training img {
 }
 
 /*CERTIFICATION*/
-main .training,
 main .container .certification {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    padding: 30px;
+}  
 main .container .certification {
     width: 100%;
     height: 100%;
     flex-direction: column;
+    border-bottom: 3px solid #3a2812;
 }
-main .diploma{
-    max-width: 750px;
+main .certification .diploma,
+main .certification .diploma-specialization {
+    max-width: 850px;
     width: 100%;
-    max-height: 450px;
+    max-height: 480px;
     height: 100%;
-    transition: all 0.3s ease-in; 
+    transition: all 0.2s ease-in; 
 }
-main .diploma:hover {
+main .certification .diploma:hover,
+main .container .diploma-specialization:hover{
     max-width: 950px;
     max-height: 750px;
     position: absolute;
     align-items: center;
-   height: auto;
+    height: auto;
 }
-main .diploma img {
+main .certification .diploma img,
+main .certification .diploma-specialization img {
     width: 100%;
     height: 100%;
     border: 1px solid #3a2812;
     border-radius: 5px;
-    box-shadow:  0px 15px 30px #888888;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-main .course-information {
+main .certification .course-information {
     padding: 10px;
     color: #3a2812;
-}
-main .course-information h1 {
     text-align: center;
+}
+main .certification .course-information h1 {
     font-weight: 700;
     font-size: 30px;
 }
-main .course-information p {
+main .certification .course-information p {
     padding: 10px;
     font-size: 20px;
     font-weight: 500;
+}
+
+/*COURSE*/
+main .flex-specialization {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Midia*/
