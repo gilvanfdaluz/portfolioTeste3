@@ -216,14 +216,6 @@ main .certification .course-information p {
     font-weight: 500;
 }
 
-/*COURSE*/
-main .flex-specialization {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 /*Midia*/
 @media (max-width: 1075px){
     main .profile .title {
