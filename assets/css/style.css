@@ -188,11 +188,6 @@ main .banner .diploma {
    width: 80%;
    height: calc(100% - 80px);
 }
-main .banner .diploma:hover{
-    width: 55%;
-    height: auto;
-    position: absolute;
-}
 main .banner .course-information,
 main .banner .course-information p {
     padding: 10px;
