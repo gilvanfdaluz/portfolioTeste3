@@ -297,7 +297,7 @@ main .container .slide .next:hover {
 /* Indicadores de slide (círculos) */
 main .container .slide .indicators {
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -309,7 +309,6 @@ main .container .slide .indicators button {
     background-color: #3a2812;
     border: 2px solid #523e27;
     border-radius: 50%;
-    margin-bottom: 70px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -343,6 +342,7 @@ main .container .slide .indicators button.active {
     main .profile .training img{
         width: 130px;
     }
+  
 }
 
 @media (max-width: 768px){
@@ -451,6 +451,9 @@ main .container .slide .indicators button.active {
     }
     main .banner .diploma img{
         max-width: 90%;
+    }
+    main .container .slide .indicators {
+        bottom: 100px;
     }
 }
 
