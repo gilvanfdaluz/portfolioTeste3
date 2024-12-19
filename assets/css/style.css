@@ -106,23 +106,29 @@ main .profile {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
 }
-main .profile .container,
-main .profile .flex,
-main .profile .title,
 main .profile .description {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 main .profile .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 main .profile .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     flex-direction: column;
     height: 100%;
 }
 main .profile .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 100px;
     font-weight: 500;
     color: #af8016;
@@ -165,19 +171,19 @@ main .profile .training img {
 }
 
 /*CONTAINER CERTIFICATION*/
-main .container .banner,
-main .banner .certification {
+main .container .banner {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-main .container .banner,
-main .banner .certification,
-main .banner .diploma img {
     width: 100%;
     height: 100%;
 }
 main .banner .certification {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 30px;
@@ -252,7 +258,7 @@ main .container .certification-course {
     align-items: center;
     margin-bottom: 100px;
 }
-main .certification-course img {
+main .container .certification-course img {
     max-width: 90%;
     max-height: 400px;
     height: auto;
@@ -303,6 +309,7 @@ main .container .slide .indicators button {
     background-color: #3a2812;
     border: 2px solid #523e27;
     border-radius: 50%;
+    margin-bottom: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -442,6 +449,9 @@ main .container .slide .indicators button.active {
         font-size: 14px;
         line-height: 20px
     }
+    main .banner .diploma img{
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -462,7 +472,10 @@ main .container .slide .indicators button.active {
     main .profile .training img{
         width: 100px;
     }  
-}
+    main .banner .diploma img{
+        max-width: 100%;
+    }
+ }
 
 @media (max-width: 310px){
     main .profile {
