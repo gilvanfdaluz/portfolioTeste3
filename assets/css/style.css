@@ -478,6 +478,9 @@ main .container .slide .indicators button.active {
     main .banner .diploma img{
         max-width: 100%;
     }
+    main .container .slide .indicators {
+        bottom: 150px;
+    }
  }
 
 @media (max-width: 310px){
